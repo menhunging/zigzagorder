@@ -1,0 +1,20 @@
+.btnYellow {
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ffb400;
+  @include border-radius(2px);
+  letter-spacing: 0.02em;
+  font-family: "Montserrat", sans-serif;
+  @include transition(all 0.3s);
+  text-decoration: none;
+
+  &:hover {
+    background-color: #e29e00;
+  }
+}

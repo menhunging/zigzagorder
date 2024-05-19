@@ -1,0 +1,90 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+label,
+textarea,
+input {
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+}
+
+.inputWrapper {
+  %stylesInput {
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    @include border-radius(2px);
+    padding: 0 16px;
+    width: 100%;
+    &::placeholder {
+      opacity: 1;
+      font-weight: 300;
+    }
+  }
+  input {
+    @extend %stylesInput;
+    height: 50px;
+  }
+}
+
+.checkBlock {
+  max-width: 405px;
+  margin: 16px auto 0;
+  input {
+    display: none;
+    &:checked {
+      & + label {
+        &::before {
+          background-color: #f4b108;
+          @include box-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+        }
+        &:after {
+          left: 18px;
+        }
+      }
+    }
+  }
+  label {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    position: relative;
+    padding-left: 50px;
+    display: block;
+
+    @include before {
+      left: 0;
+      top: 0;
+      width: 34px;
+      height: 18px;
+      @include box-shadow(none);
+      @include border-radius(10px);
+      background-color: #f8f8f8;
+    }
+
+    @include after {
+      left: 2px;
+      top: 2px;
+      width: 14px;
+      height: 14px;
+      background-color: #fff;
+      @include box-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+      @include border-radius(50%);
+    }
+
+    a {
+      color: #f9b117;
+      letter-spacing: 0.02em;
+      @include transition(all 0.3s);
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
+}

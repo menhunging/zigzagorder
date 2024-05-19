@@ -1,0 +1,142 @@
+.headerWrap {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 19px;
+  padding-top: 27px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  @include invisLink;
+
+  img {
+    width: 100%;
+  }
+}
+
+.menuWrapper {
+  padding-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100% - 175px);
+}
+
+.menu {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      & + li {
+        margin-left: 70px;
+      }
+    }
+  }
+  .menuItem {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    text-decoration: none;
+    @include transition(color 0.3s);
+
+    &:hover {
+      color: #ffb400;
+    }
+  }
+}
+
+.socialWrap {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      & + li {
+        margin-left: 67px;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000;
+      text-decoration: none;
+      @include transition(color 0.3s);
+
+      &:hover {
+        color: #ffb400;
+      }
+    }
+
+    img {
+      &.icon {
+        margin-right: 5px;
+        top: -1px;
+      }
+    }
+    .icon {
+      position: relative;
+      width: 22px;
+      margin-right: 8px;
+      text-align: center;
+
+      svg {
+        fill: #828282;
+      }
+    }
+  }
+}
+
+.menuBurger {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0;
+  display: none;
+
+  .line {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    @include transition(all 0.3s);
+
+    & + .line {
+      margin-top: 5px;
+    }
+  }
+  &.open {
+    left: 31px;
+
+    .line {
+      &:nth-child(1) {
+        @include transform(rotate(45deg) translate(9px, 12px));
+        top: -9px;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        @include transform(rotate(-45deg) translate(8px, -11px));
+        top: 5px;
+      }
+    }
+  }
+}

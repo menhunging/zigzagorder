@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
+  <title>Главная</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <style>
+    .wrapper_inner.wide_page {
+      max-width: none;
+      padding-left: 0px;
+      padding-right: 0px;
+      background: none;
+    }
+
+
+    .container_inner {
+      max-width: 1444px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .caption.sk-caption {
+      font-size: 31px !important;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
+    .caption.sk-caption {
+      font-weight: 500 !important;
+      font-size: 1.6em !important;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="wraps" id="content"> <!-- class с сайта http://podbor.zigzag-eva.ru/ -->
+    <div class="wrapper_inner"> <!-- class с сайта http://podbor.zigzag-eva.ru/ -->
+      <div class="container_inner clearfix"> <!-- class с сайта http://podbor.zigzag-eva.ru/ -->
+
+        <div class="order-page">
+          <div class="order-page__head">
+            <h2 class="caption">Оформление заказа</h2>
+          </div>
+
+          <form class="order-page__form">
+            <div class="order-page__col order--left">
+              <h3 class="title">Заполните пошагово необходимые данные</h3>
+
+              <div class="order-page__block">
+                <div class="order-select">
+                  <span class="num">1</span>
+                  <span class="label">Выберите населенный пункт:</span>
+                  <select name="" id="">
+                    <option value="">г. Санкт-Петергбург</option>
+                    <option value="">г. Санкт-Петергбург</option>
+                    <option value="">г. Санкт-Петергбург</option>
+                  </select>
+                </div>
+                <div class="order-select">
+                  <span class="num">2</span>
+                  <span class="label">Выберите способ доставки:</span>
+                  <div class="order-list__radio">
+                    <div class="order-radio">
+                      <input type="radio" id="dl1" name="delivery" checked>
+                      <label for="dl1">Почта</label>
+                    </div>
+                    <div class="order-radio">
+                      <input type="radio" id="dl2" name="delivery">
+                      <label for="dl2">Сдэк</label>
+                    </div>
+                  </div>
+                  <span class="price-delivery">Доставка: <span class="price">450</span>₽</span>
+                </div>
+                <div class="order-select">
+                  <span class="num">3</span>
+                  <span class="label">Выберите пункт выдачи:</span>
+                  <div class="order-select__controls">
+                    <button class="btn btn-red">Выбрать</button>
+                    <span>из 233 доступных</span>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="order-page__block">
+                <div class="order-select">
+                  <span class="num">4</span>
+                  <span class="label">Получатель:</span>
+                  <div class="order-input">
+                    <input type="text" placeholder="ФИО">
+                    <span class="icon icon--people"></span>
+                  </div>
+                  <div class="order-input">
+                    <input type="text" placeholder="+7 (999) 000-00-00">
+                    <span class="icon icon--phone"></span>
+                  </div>
+                  <div class="order-input">
+                    <textarea placeholder="Комментарий"></textarea>
+                    <span class="icon icon--comments"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-page__text">
+                Оплата при получении - Оплата производится наличными деньгами или картой, при получении товара в пункте
+                выдачи.
+              </div>
+            </div>
+            <div class="order-page__col order--right">
+              <h3 class="title">Добавить к заказу:</h3>
+              <div class="list-product">
+                <div class="list-product__item">
+                  <input type="checkbox" id="dop1" name="dop">
+                  <label for="dop1"></label>
+                  <img src="./img/pic-basket.png" alt="">
+                  <a class="link" href="#">Саквояж для Toyota Allex</a>
+                  <span class="price">1 350 ₽</span>
+                </div>
+                <div class="list-product__item">
+                  <input type="checkbox" id="dop2" name="dop">
+                  <label for="dop2"></label>
+                  <img src="./img/pic-basket.png" alt="">
+                  <a class="link" href="#">Саквояж для Toyota Allex</a>
+                  <span class="price">1 350 ₽</span>
+                </div>
+                <div class="list-product__item">
+                  <input type="checkbox" id="dop3" name="dop">
+                  <label for="dop3"></label>
+                  <img src="./img/pic-basket.png" alt="">
+                  <a class="link" href="#">Саквояж для Toyota Allex</a>
+                  <span class="price">1 350 ₽</span>
+                </div>
+              </div>
+              <div class="order-result">
+                <span class="order-result__title">Ваш заказ</span>
+                <a href="#" class="order-result__link">Изменить</a>
+
+                <div class="order-result__info">
+                  <ul>
+                    <li>
+                      <span class="order-result__title">Товаров на:</span>
+                      <span class="order-result__price">17 790 ₽</span>
+                    </li>
+                    <li>
+                      <span class="order-result__title">Доставка:</span>
+                      <span class="order-result__price">450 ₽</span>
+                    </li>
+                    <li>
+                      <span class="order-result__title">Скидка:</span>
+                      <span class="order-result__sale">-15%</span>
+                      <span class="order-result__price">1824 ₽</span>
+                    </li>
+                  </ul>
+
+                  <div class="result-bottom">
+                    <span>Итого:</span>
+                    <span class="price">16 416 ₽</span>
+                  </div>
+                </div>
+
+                <button class="btn btn--yellow">Оформить заказ</button>
+                <span class="desc">
+                  Нажимая на кнопку “Оформить заказ” вы соглашаетесь с политикой конфиденциальности и обработкой
+                  персональных данных
+                </span>
+              </div>
+            </div>
+            <div class="order-page__col order--left">
+              <h3 class="title">Товары в корзине:</h3>
+
+              <a href="#" class="clear-basket">Очистить корзину</a>
+
+              <div class="basket-list">
+                <div class="table">
+                  <div class="thead">
+                    <div class="th">Наименование</div>
+                    <div class="th">Цена</div>
+                    <div class="th">кол-во</div>
+                    <div class="th">Сумма</div>
+                  </div>
+                  <div class="tbody">
+                    <div class="tr">
+                      <div class="picture">
+                        <img src="./img/pic-auto.png" alt="">
+                      </div>
+                      <div class="basket-list__info">
+                        <a href="#" class="link">Комплект ковриков в салон для Toyota Allex I 2001 - 2006 правый
+                          руль</a>
+                        <a href="#" class="more">Подробнее</a>
+                      </div>
+                      <div class="basket-list__price">
+                        <sopan class="price">4 590 ₽</sopan>
+                        <span class="count">цена за 1 шт</span>
+                      </div>
+                      <div class="count-block">
+                        <span class="minus">-</span>
+                        <span class="count">1</span>
+                        <span class="plus">+</span>
+                      </div>
+                      <div class="price-block">
+                        <sopan class="price">4 590 ₽</sopan>
+                      </div>
+                      <button class="btn-delete">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.287223 0.242603C0.613474 -0.0820176 1.14111 -0.0806951 1.46573 0.245556L5 3.79759L8.53427 0.245556C8.85889 -0.0806951 9.38653 -0.0820176 9.71278 0.242603C10.039 0.567223 10.0404 1.09486 9.71573 1.42111L6.17557 4.97906L9.7574 8.57889C10.082 8.90514 10.0807 9.43278 9.75444 9.7574C9.42819 10.082 8.90056 10.0807 8.57594 9.75444L5 6.16054L1.42406 9.75444C1.09944 10.0807 0.571808 10.082 0.245556 9.7574C-0.0806951 9.43278 -0.0820176 8.90514 0.242603 8.57889L3.82443 4.97906L0.284269 1.42111C-0.0403509 1.09486 -0.0390285 0.567223 0.287223 0.242603Z"
+                            fill="#B6B5B5" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="tr">
+                      <div class="picture">
+                        <img src="./img/pic-auto.png" alt="">
+                      </div>
+                      <div class="basket-list__info">
+                        <a href="#" class="link">Комплект ковриков в салон для Toyota Allex I 2001 - 2006 правый
+                          руль</a>
+                        <a href="#" class="more">Подробнее</a>
+                      </div>
+                      <div class="basket-list__price">
+                        <sopan class="price">4 590 ₽</sopan>
+                        <span class="count">цена за 1 шт</span>
+                      </div>
+                      <div class="count-block">
+                        <span class="minus">-</span>
+                        <span class="count">1</span>
+                        <span class="plus">+</span>
+                      </div>
+                      <div class="price-block">
+                        <sopan class="price">4 590 ₽</sopan>
+                      </div>
+                      <button class="btn-delete">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.287223 0.242603C0.613474 -0.0820176 1.14111 -0.0806951 1.46573 0.245556L5 3.79759L8.53427 0.245556C8.85889 -0.0806951 9.38653 -0.0820176 9.71278 0.242603C10.039 0.567223 10.0404 1.09486 9.71573 1.42111L6.17557 4.97906L9.7574 8.57889C10.082 8.90514 10.0807 9.43278 9.75444 9.7574C9.42819 10.082 8.90056 10.0807 8.57594 9.75444L5 6.16054L1.42406 9.75444C1.09944 10.0807 0.571808 10.082 0.245556 9.7574C-0.0806951 9.43278 -0.0820176 8.90514 0.242603 8.57889L3.82443 4.97906L0.284269 1.42111C-0.0403509 1.09486 -0.0390285 0.567223 0.287223 0.242603Z"
+                            fill="#B6B5B5" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="tr">
+                      <div class="picture">
+                        <img src="./img/pic-auto.png" alt="">
+                      </div>
+                      <div class="basket-list__info">
+                        <a href="#" class="link">Комплект ковриков в салон для Toyota Allex I 2001 - 2006 правый
+                          руль</a>
+                        <a href="#" class="more">Подробнее</a>
+                      </div>
+                      <div class="basket-list__price">
+                        <sopan class="price">4 590 ₽</sopan>
+                        <span class="count">цена за 1 шт</span>
+                      </div>
+                      <div class="count-block">
+                        <span class="minus">-</span>
+                        <span class="count">1</span>
+                        <span class="plus">+</span>
+                      </div>
+                      <div class="price-block">
+                        <sopan class="price">4 590 ₽</sopan>
+                      </div>
+                      <button class="btn-delete">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.287223 0.242603C0.613474 -0.0820176 1.14111 -0.0806951 1.46573 0.245556L5 3.79759L8.53427 0.245556C8.85889 -0.0806951 9.38653 -0.0820176 9.71278 0.242603C10.039 0.567223 10.0404 1.09486 9.71573 1.42111L6.17557 4.97906L9.7574 8.57889C10.082 8.90514 10.0807 9.43278 9.75444 9.7574C9.42819 10.082 8.90056 10.0807 8.57594 9.75444L5 6.16054L1.42406 9.75444C1.09944 10.0807 0.571808 10.082 0.245556 9.7574C-0.0806951 9.43278 -0.0820176 8.90514 0.242603 8.57889L3.82443 4.97906L0.284269 1.42111C-0.0403509 1.09486 -0.0390285 0.567223 0.287223 0.242603Z"
+                            fill="#B6B5B5" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <a href="#" class="basket-list__more">Еще <span>2</span> товара</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

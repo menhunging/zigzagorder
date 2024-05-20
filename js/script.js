@@ -16,7 +16,8 @@ $(document).ready(function () {
   }
 
   if ($(".basket-list__more").length > 0) {
-    $(".basket-list__more").on("click", function () {
+    $(".basket-list__more").on("click", function (event) {
+      event.preventDefault();
       $(this).hide();
       $(".basket-list").addClass("opened");
     });
@@ -43,7 +44,8 @@ $(document).ready(function () {
   }
 
   if ($(".fixed-top-order__close").length > 0) {
-    $(".fixed-top-order__close").on("click", function () {
+    $(".fixed-top-order__close").on("click", function (event) {
+      event.preventDefault();
       $(this).parents(".fixed-top-order").hide();
     });
   }
@@ -52,23 +54,29 @@ $(document).ready(function () {
 function openModal(modal) {
   MicroModal.show(modal);
 
+  $(".modal__overlay").off("click");
+  $(".modal__close").off("click");
+
   setTimeout(() => {
     $(".modal__overlay").on("click", function (event) {
       if ($(".modal__overlay").has(event.target).length === 0) {
         closeModal(modal);
       }
     });
+
     $(".modal__close").on("click", function () {
       closeModal(modal);
     });
+
     $("body").addClass("modal-open");
   }, 150);
 }
 
 function closeModal(modal) {
-  MicroModal.close(modal);
   setTimeout(() => {
     $("body").removeClass("modal-open");
     $(".fixed-top-order").addClass("opened");
   }, 150);
+
+  MicroModal.close(modal);
 }

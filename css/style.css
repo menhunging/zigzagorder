@@ -687,7 +687,10 @@ input {
   border-top-right-radius: 5px;
 }
 .basket-list .thead .th:nth-child(1) {
-  width: calc(50% - 8px);
+  width: 65%;
+}
+.basket-list .thead .th:nth-child(2) {
+  width: 24%;
 }
 .basket-list .thead .th:nth-child(4) {
   width: 15%;
@@ -1408,17 +1411,17 @@ input {
     grid-template-columns: 67% 30%;
     gap: 30px;
   }
-  .basket-list .thead .th:nth-child(1) {
-    width: calc(50% + 16px);
-  }
   .order-page {
     padding: 0 15px;
   }
+  .basket-list .thead .th:nth-child(1) {
+    width: 65%;
+  }
+  .basket-list .thead .th:nth-child(2) {
+    width: 23%;
+  }
 }
 @media (max-width: 1300px) {
-  .basket-list .thead .th:nth-child(1) {
-    width: calc(50% - 22px);
-  }
   .order-result {
     margin-top: 30px;
   }
@@ -1427,6 +1430,12 @@ input {
   }
   .select2-container--default .select2-selection--single .select2-selection__arrow {
     right: 10px;
+  }
+  .basket-list .thead .th:nth-child(1) {
+    width: 65%;
+  }
+  .basket-list .thead .th:nth-child(2) {
+    width: 22%;
   }
 }
 @media (max-width: 1199px) {
@@ -1455,9 +1464,20 @@ input {
   .order--right .order-result {
     width: calc(50% - 15px);
     margin: 0;
+    margin-top: 30px;
   }
   .basket-list .thead .th:nth-child(1) {
     width: calc(50% - 2px);
+  }
+  .order-page__text {
+    order: -1;
+    margin-top: 0;
+  }
+  .basket-list .thead .th:nth-child(1) {
+    width: 65%;
+  }
+  .basket-list .thead .th:nth-child(2) {
+    width: 25%;
   }
 }
 @media (max-width: 1024px) {
@@ -1597,6 +1617,7 @@ input {
     box-shadow: none;
     margin-top: 0;
     width: 50%;
+    flex: 1;
   }
   .basket-list .tbody {
     box-shadow: none;
@@ -1723,8 +1744,11 @@ input {
   .order-page__text {
     padding: 15px;
     height: auto;
-    max-width: 90%;
-    margin: 10px auto;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  .order-page__form {
+    gap: 20px;
   }
   .order--right .order-result {
     padding: 30px 20px;
@@ -1755,6 +1779,9 @@ input {
   .form-manager .caption {
     font-size: 28px;
     line-height: 32px;
+  }
+  .basket-list .tr + .tr {
+    margin-top: 30px;
   }
 }
 

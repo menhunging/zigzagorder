@@ -990,8 +990,8 @@ input {
   border: solid 1px #ffb400;
 }
 .order-result .btn--yellow:hover {
-  border-color: #fff;
-  background-color: transparent;
+  border-color: rgb(49, 204, 49);
+  background-color: rgb(49, 204, 49);
   color: #fff;
 }
 .order-result .desc {
@@ -1782,6 +1782,38 @@ input {
   }
   .basket-list .tr + .tr {
     margin-top: 30px;
+  }
+  .fixed-top-order .form-manager .timer {
+    font-size: 18px;
+    width: auto;
+  }
+  .fixed-top-order .form-manager {
+    gap: 8px;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .fixed-top-order .form-manager .sale {
+    font-size: 15px;
+    line-height: 22px;
+    width: 50px;
+    height: 20px;
+    min-height: 26px;
+  }
+  .fixed-top-order .form-manager .text {
+    width: auto;
+    width: 210px;
+  }
+  .fixed-top-order__head {
+    gap: 0;
+    width: 100%;
+  }
+  .fixed-top-order .form-manager .caption {
+    width: 75%;
+  }
+  .fixed-top-order .form-manager .btn {
+    width: 100%;
+    max-width: 80%;
   }
 }
 

@@ -485,6 +485,45 @@
 
   .mobile-th--first {
   }
+
+  .fixed-top-order .form-manager .timer {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .fixed-top-order .form-manager {
+    gap: 8px;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+
+    .sale {
+      font-size: 15px;
+      line-height: 22px;
+      width: 50px;
+      height: 20px;
+      min-height: 26px;
+    }
+  }
+
+  .fixed-top-order .form-manager .text {
+    width: auto;
+    width: 210px;
+  }
+
+  .fixed-top-order__head {
+    gap: 0;
+    width: 100%;
+  }
+
+  .fixed-top-order .form-manager .caption {
+    width: 75%;
+  }
+
+  .fixed-top-order .form-manager .btn {
+    width: 100%;
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 639px) {

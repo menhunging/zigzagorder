@@ -485,6 +485,7 @@ input {
 .order-list__radio {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 5px;
   border: solid 1px #b6b5b5;
   border-radius: 5px;
@@ -500,6 +501,7 @@ input {
 }
 .order-radio input:checked + label {
   background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.22);
 }
 .order-radio label {
   cursor: pointer;
@@ -512,6 +514,9 @@ input {
   text-align: center;
   transition: all 0.3s;
 }
+.order-radio label:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.22);
+}
 
 .price-delivery {
   font-size: 18px;
@@ -523,6 +528,8 @@ input {
 .price-delivery .price {
   font-weight: 800;
   margin-left: 5px;
+  font-size: 22px;
+  color: #d93333;
 }
 
 .order-select__controls {
